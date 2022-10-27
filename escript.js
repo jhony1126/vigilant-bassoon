@@ -17,7 +17,7 @@ function encriptar(x){
     let texto=areaTexto.value;
 
     if(texto.match(soloLetras)!=null){
-        let palabras = texto.split(' ');
+        let palabras = texto.split('' );
         let nuevasPalabras = [];
         
         for (let palabra of palabras) {
@@ -84,3 +84,4 @@ function copiarTexto(x) {
 
     navigator.clipboard.writeText(mensaje);
 }
+
